@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>Before the script...</p>
+  <p>...After the script.</p>
+  <script>
+    'use strict';
+    var i= 0;
+    do
+    {
+        document.write("<strong>Outer Loop </strong>");// code display
+        document.write(i);
+        i++;
+        document.write("<br>");//cursor going to next line
+        var j = 0;
+        do{
+        document.write("Inner Loop");// code display
+        document.write(j);
+        j++;
+        document.write("<br>");
+        } while(j<5);
+    
+
+    }while(i<3);
+
+  </script>
+</body>
+
+</html>
