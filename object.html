@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a={
+            fname:'sahil',
+            lname:'shah',
+            age:'25',
+            email:'shahsa6809@gmail.com',
+            favColor:['red','black','blue'],
+            living:{
+            'city':'Mumbai',
+            'country':'India'
+            },
+            salary :function(){// salary is method
+                return 25000;
+            },
+            fullname:function(){//fullname is function
+                return this.fname + " " + this.lname;
+            }
+        }
+        console.log(a);
+        console.log(a.fname);
+        //document.write(a);
+        //document.write(a.favColor[0]);
+        //document.write(a.salary());
+        //document.write(a.fullname());
+        document.write(a.living.city);
+    </script>
+</body>
+</html>
